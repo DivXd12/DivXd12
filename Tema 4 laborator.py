@@ -1,8 +1,8 @@
 meniu = ['papanasi']*10 + ['ceafa']*3 + ['guias']*6
 preturi = [['papanasi', 7], ['ceafa', 10], ['guias', 5]]
-studenti = ['Liviu', 'Ion', 'George', 'Ana', 'Florica'] #queue
-comenzi = ['guias', 'ceafa', 'ceafa', 'papanasi', 'ceafa'] #queue
-tavi = ['tava']*7  #stack
+studenti = ['Liviu', 'Ion', 'George', 'Ana', 'Florica'] 
+comenzi = ['guias', 'ceafa', 'ceafa', 'papanasi', 'ceafa'] 
+tavi = ['tava']*7 
 istoricul_comenzilor = []
 
 portii = {}
@@ -37,4 +37,4 @@ for item in preturi:
         total += portii[item[0]]*item[1]
 print(f"\nCantina a incasat: {total} lei.")
 
-print(f"Produse care costa cel mult 7 lei: {list(pret for pret in preturi if pret[1] <= 7)}\n")
+print(f"Produse care costa maxim 7 lei: {list(pret for pret in preturi if pret[1] <= 7)}\n")
